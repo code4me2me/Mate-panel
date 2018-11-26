@@ -1,25 +1,26 @@
 @define-color light-bg rgba(255, 255, 255, 0.3);
-@define-color dark-bg rgba(0,0,0,.7);
+@define-color dark-bg rgba(0,0,0,0.7);
 
-
-#fast-user-switch-menubar,
+/*Window elements background*/
+#fast-user-switch-menubar,/*Indicator Applet*/
 #fast-user-switch-menubar>menuitem window, /* Popup window */
 window.mate-panel-menu-bar /* CPUfreq poup window*/	 
 {
     background-color: transparent;
 }
-
+/*Remove padding on Indicator Applet icons*/
 #fast-user-switch-menubar>menuitem {
 	 padding: 0 1px;
 }
 
-/*Popup items on panel */
+/*Popup items on Indicator Applet */
 #fast-user-switch-menubar>menuitem menu{
 	background-color: @dark-bg;
 	border-radius: 1rem;
 }
+
 #mate-panel-menu-bar > #mate-panel-context-menu menuitem, /* Context menu popup items*/
-#MatePanelAppletPopup menuitem:hover,
+#MatePanelAppletPopup menuitem:hover,/*hover elements*/
 .mate-panel-menu-bar window:hover,
 #fast-user-switch-menubar>menuitem>window menuitem:hover,
 #fast-user-switch-menubar menuitem:hover
@@ -38,10 +39,12 @@ window.mate-panel-menu-bar /* CPUfreq poup window*/
 .mate-panel-applet-slider :hover{
 	border-radius:1rem;
 }
+
 #mate-panel-menu-bar > #mate-panel-context-menu, /* Context menu popup window */
 #MatePanelAppletPopup, /* Right click menu popup */
-#CPUFreqSelectorPopup,
-.mate-panel-applet-slider {
+#CPUFreqSelectorPopup,/*CPUFreq indicator*/
+.mate-panel-applet-slider /*Brightness control slider window*/
+{
 	background-color: @dark-bg;
 	border-radius: 1rem;
 }
@@ -75,15 +78,15 @@ window.mate-panel-menu-bar /* CPUfreq poup window*/
 	border-top-color: transparent;
 }
 #MatePanelPopupWindow calendar:active{
-	background-color:rgb(54,123,240);
+	background-color: rgb(54,123,240);
 	border-radius: 1rem;
 }
-/*Music Player */
+/*Music Player - Audio indicator  */
 #fast-user-switch-menubar>menuitem>window>menu menuitem grid label {
-	color:white;
-	outline-width:0;
+	color: #ffffff;
+	outline-width: 0;
 }
 #fast-user-switch-menubar>menuitem>window>menu menuitem grid image{
-	color:transparent;
+	color: transparent; 
 }
 
