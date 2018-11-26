@@ -1,2 +1,2 @@
 # Mate-panel
-A custom Gtk CSS Mate-Panel customization with Arc theme 
+A custom Gtk CSS Mate-Panel customization on top of the Arc theme 
