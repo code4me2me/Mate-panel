@@ -1,0 +1,89 @@
+@define-color light-bg rgba(255, 255, 255, 0.3);
+@define-color dark-bg rgba(0,0,0,.7);
+
+
+#fast-user-switch-menubar,
+#fast-user-switch-menubar>menuitem window, /* Popup window */
+window.mate-panel-menu-bar /* CPUfreq poup window*/	 
+{
+    background-color: transparent;
+}
+
+#fast-user-switch-menubar>menuitem {
+	 padding: 0 1px;
+}
+
+/*Popup items on panel */
+#fast-user-switch-menubar>menuitem menu{
+	background-color: @dark-bg;
+	border-radius: 1rem;
+}
+#mate-panel-menu-bar > #mate-panel-context-menu menuitem, /* Context menu popup items*/
+#MatePanelAppletPopup menuitem:hover,
+.mate-panel-menu-bar window:hover,
+#fast-user-switch-menubar>menuitem>window menuitem:hover,
+#fast-user-switch-menubar menuitem:hover
+{
+	border-radius: 1rem;
+	background-color: @light-bg;
+}
+
+/* brightness control button popup */
+.mate-panel-applet-slider  border{
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-top-color: transparent;
+}
+.mate-panel-applet-slider :hover{
+	border-radius:1rem;
+}
+#mate-panel-menu-bar > #mate-panel-context-menu, /* Context menu popup window */
+#MatePanelAppletPopup, /* Right click menu popup */
+#CPUFreqSelectorPopup,
+.mate-panel-applet-slider {
+	background-color: @dark-bg;
+	border-radius: 1rem;
+}
+
+/*CLOCK PANEL & CALENDAR */
+#clock-applet-button{
+	font-size: small;
+}
+#clock-applet-button:hover,
+#MatePanelPopupWindow frame widget:first-child,
+#MatePanelPopupWindow calendar:selected,
+#PanelApplet button:checked {
+
+	background-color: @light-bg;
+	border-radius:1rem;
+}
+
+#MatePanelPopupWindow calendar,
+#MatePanelPopupWindow {
+	background-color: transparent;
+}
+
+#MatePanelPopupWindow frame {
+	background-color: @dark-bg;
+	border-radius: 1rem;
+}
+#MatePanelPopupWindow frame border {
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-top-color: transparent;
+}
+#MatePanelPopupWindow calendar:active{
+	background-color:rgb(54,123,240);
+	border-radius: 1rem;
+}
+/*Music Player */
+#fast-user-switch-menubar>menuitem>window>menu menuitem grid label {
+	color:white;
+	outline-width:0;
+}
+#fast-user-switch-menubar>menuitem>window>menu menuitem grid image{
+	color:transparent;
+}
+
