@@ -2,6 +2,7 @@
 A custom Gtk3 CSS Mate-Panel customization on top of the Arc theme.
 
 Gives a transparent dark style on the mate-panel and popup menu windows, with a light hover rounded style for menu elements.
+Copy "gtk.css" file to your local directory ~.config/gtk-3.0/
 
 ![screenshot_1](https://user-images.githubusercontent.com/32439114/48990257-ba6d8f80-f0fb-11e8-89ee-b17e19f0dca2.png)
 
