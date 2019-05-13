@@ -1,0 +1,36 @@
+#clock-applet-button{
+font-size: small;
+}
+#MatePanelPopupWindow frame widget:first-child,
+#MatePanelPopupWindow calendar:selected,
+#PanelApplet button:checked {
+
+	background-color: rgba(255,255,255,0.3);
+	border-radius:1rem;
+}
+#clock-applet-button:hover{
+border-radius: 1rem;
+background-color:rgba(255, 255, 255, 0.3)
+}
+
+#MatePanelPopupWindow {
+	background-color: transparent;
+}
+
+#MatePanelPopupWindow frame {
+	background-color: rgba(0,0,0,.7);
+	border-radius: 1rem;
+}
+#MatePanelPopupWindow frame border {
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-top-color: transparent;
+}
+#MatePanelPopupWindow calendar{
+	background-color: transparent;
+}
+#MatePanelPopupWindow calendar:active{
+	background-color:rgb(54,123,240);
+	border-radius: 1rem;
+}
